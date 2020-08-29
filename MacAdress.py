@@ -23,7 +23,7 @@ if __name__ == "__main__":
 	# create a GUI window 
 	gui = Tk() 
 	gui.configure(background="light green") 
-	gui.title("Simple Automatization Test") 
+	gui.title("{0}".format(format_mac_adress())) 
 	gui.geometry("270x150") 
 	equation = StringVar() 
 	expression_field = Entry(gui, textvariable=equation) 
