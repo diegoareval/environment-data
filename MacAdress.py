@@ -3,8 +3,8 @@ import subprocess
 import sys
 import os
 
-mac = get_mac()
-def format_mac_adress(mac):
+def format_mac_adress():
+  mac = get_mac()
   return ':'.join(("%012X" % mac)[i:i+2] for i in range(0, 12, 2))
 
 def get_path():
